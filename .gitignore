@@ -1,0 +1,7 @@
+/dist
+.env
+.env.dev
+.env.hml
+.env.prd
+/node_modules
+
