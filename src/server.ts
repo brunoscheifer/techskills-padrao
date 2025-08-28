@@ -1,7 +1,6 @@
-import express from 'express';
+import { app } from "./app";
+import { config } from "./config/env";
 
-const app = express()
-
-app.use(express.json())
-
-app.listen()
+app.listen(config.app_port, () => {
+    console.log(`Servidor '${config.app_name}' rodando na porta: ${config.app_port}`)
+})
