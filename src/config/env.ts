@@ -4,6 +4,6 @@ configDotenv({
 })
 
 export const config = {
-    app_name: process.env.APP_NAME,
-    app_port: process.env.APP_PORT
+    app_name: process.env.APP_NAME || 'deu erro',
+    app_port: process.env.APP_PORT || 3000
 }
